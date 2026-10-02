@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alix Hernandez | Bull Rider</title>
+<meta name="description" content="Official website of Alix Hernandez — bull rider, competitor, and athlete. Follow the journey and explore sponsorship opportunities.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --black:#07090b;
+  --dark:#101419;
+  --dark2:#171c21;
+  --gold:#d7a646;
+  --gold2:#f1cf78;
+  --white:#f7f3ea;
+  --gray:#b7b7b7;
+  --blue:#315f82;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:
+    radial-gradient(circle at 20% 20%,rgba(215,166,70,.08),transparent 28%),
+    linear-gradient(180deg,#050607,#101317);
+  color:var(--white);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(5,7,9,.95);
+  border-bottom:1px solid rgba(215,166,70,.35);
+  backdrop-filter:blur(10px);
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:12px 22px;
+}
+
+.logo{
+  color:var(--gold2);
+  font-size:27px;
+  font-family:Georgia,serif;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.logo span{
+  color:#fff;
+  font-size:12px;
+  display:block;
+  letter-spacing:5px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
+
+nav a{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+nav a:hover{
+  color:var(--gold2);
+}
+
+.btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#f1cf78,#b47a22);
+  color:#090909;
+  padding:13px 22px;
+  border-radius:4px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.7px;
+  border:1px solid #f6d887;
+  box-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+
+.btn-blue{
+  background:#142638;
+  color:white;
+  border:1px solid #4d83a8;
+}
+
+/* HERO */
+
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  border-bottom:2px solid var(--gold);
+  background:
+    linear-gradient(90deg,rgba(3,4,5,.98) 0%,rgba(3,4,5,.88) 43%,rgba(3,4,5,.45) 100%),
+    radial-gradient(circle at 75% 40%,rgba(215,166,70,.18),transparent 35%),
+    #111;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.12;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(255,255,255,.05) 4px
+    );
+  pointer-events:none;
+}
+
+.hero-content{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:90px 25px;
+  position:relative;
+  z-index:2;
+}
+
+.eyebrow{
+  color:var(--gold2);
+  text-transform:uppercase;
+  letter-spacing:5px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(55px,9vw,115px);
+  line-height:.82;
+  text-transform:uppercase;
+  color:#e9c56e;
+  text-shadow:
+    2px 2px 0 #6f4817,
+    5px 8px 18px #000;
+  max-width:850px;
+}
+
+.hero h1 span{
+  display:block;
+  color:#fff4d0;
+}
+
+.bull-rider{
+  margin-top:15px;
+  font-size:22px;
+  letter-spacing:12px;
+  text-transform:uppercase;
+}
+
+.tagline{
+  color:#eee;
+  margin-top:20px;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:14px;
+}
+
+.company{
+  margin-top:8px;
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:25px;
+}
+
+.hero-buttons{
+  margin-top:35px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.hero-quote{
+  position:absolute;
+  right:5%;
+  bottom:80px;
+  max-width:260px;
+  text-align:center;
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:31px;
+  transform:rotate(-4deg);
+  color:#fff5d9;
+}
+
+/* GENERAL */
+
+section{
+  padding:80px 22px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section-title{
+  font-family:Georgia,serif;
+  text-transform:uppercase;
+  color:var(--gold2);
+  font-size:clamp(34px,5vw,55px);
+  line-height:1;
+  margin-bottom:12px;
+}
+
+.section-subtitle{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:12px;
+  color:#ddd;
+  margin-bottom:35px;
+}
+
+/* ABOUT */
+
+.about{
+  background:
+    linear-gradient(135deg,#10151a,#060708);
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:55px;
+  align-items:start;
+}
+
+.about p{
+  color:#d4d4d4;
+  font-size:17px;
+  margin-bottom:20px;
+}
+
+.signature{
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:38px;
+  margin-top:30px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+
+.stat{
+  padding:22px;
+  border:1px solid rgba(215,166,70,.3);
+  background:rgba(255,255,255,.035);
+  min-height:115px;
+}
+
+.stat strong{
+  display:block;
+  color:var(--gold2);
+  font-size:27px;
+}
+
+.stat span{
+  color:#bbb;
+  text-transform:uppercase;
+  font-size:11px;
+  letter-spacing:1px;
+}
+
+/* ACCOMPLISHMENTS */
+
+.accomplishments{
+  background:#090c0f;
+}
+
+.accomplishment-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.accomplishment{
+  padding:30px;
+  background:linear-gradient(145deg,#181d22,#0b0e11);
+  border-top:3px solid var(--gold);
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+.accomplishment h3{
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.accomplishment p{
+  color:#bbb;
+}
+
+/* SPONSORSHIP */
+
+.sponsorship{
+  background:
+    radial-gradient(circle at center,rgba(174,116,31,.16),transparent 45%),
+    #080a0c;
+}
+
+.sponsor-intro{
+  max-width:750px;
+  color:#ccc;
+  margin-bottom:35px;
+}
+
+.sponsor-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
+}
+
+.card{
+  background:linear-gradient(180deg,#1b1d1e,#0c0e10);
+  border:1px solid #575757;
+  padding:28px 20px;
+  min-height:480px;
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 10px 30px #000;
+}
+
+.card.gold{
+  border:2px solid var(--gold);
+  transform:scale(1.02);
+}
+
+.card.equipment{
+  border:2px solid #376e98;
+}
+
+.card h3{
+  text-align:center;
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-size:27px;
+  text-transform:uppercase;
+}
+
+.card.equipment h3{
+  color:#91c5ec;
+}
+
+.price{
+  text-align:center;
+  font-size:27px;
+  font-weight:bold;
+  margin:12px 0 22px;
+}
+
+.price small{
+  font-size:12px;
+  color:#bbb;
+}
+
+.card ul{
+  list-style:none;
+  margin-bottom:25px;
+  flex:1;
+}
+
+.card li{
+  margin:12px 0;
+  color:#ddd;
+  font-size:14px;
+}
+
+.card li:before{
+  content:"✓";
+  color:var(--gold2);
+  font-weight:bold;
+  margin-right:9px;
+}
+
+/* IMPACT */
+
+.impact{
+  padding:40px 22px;
+  background:linear-gradient(90deg,#14100b,#08090a,#14100b);
+  border-top:1px solid var(--gold);
+  border-bottom:1px solid var(--gold);
+}
+
+.impact-grid{
+  max-width:1000px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  text-align:center;
+  gap:25px;
+}
+
+.impact-item strong{
+  color:var(--gold2);
+  display:block;
+  font-size:27px;
+}
+
+.impact-item span{
+  text-transform:uppercase;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+/* GALLERY */
+
+.gallery{
+  background:#0d1115;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+}
+
+.photo{
+  min-height:220px;
+  border:1px solid #3c4145;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+  background:
+    linear-gradient(135deg,rgba(215,166,70,.16),transparent),
+    #181c20;
+  color:#aaa;
+  font-size:13px;
+}
+
+.photo:before{
+  content:"ALIX HERNANDEZ";
+  letter-spacing:2px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:#050708;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+}
+
+.contact-box{
+  border:1px solid rgba(215,166,70,.3);
+  padding:35px;
+  background:#101316;
+}
+
+.contact-box h3{
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.contact-line{
+  padding:12px 0;
+  border-bottom:1px solid #25292d;
+  color:#ddd;
+}
+
+.contact-line strong{
+  color:var(--gold2);
+}
+
+.cta{
+  text-align:center;
+  padding:80px 20px;
+  background:
+    radial-gradient(circle,rgba(215,166,70,.15),transparent 45%),
+    #0c0e10;
+}
+
+.cta h2{
+  font-family:Georgia,serif;
+  color:var(--gold2);
+  font-size:clamp(35px,6vw,65px);
+  text-transform:uppercase;
+  margin-bottom:15px;
+}
+
+.cta p{
+  color:#ccc;
+  margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+  padding:35px 20px;
+  border-top:1px solid #45351c;
+  background:#030405;
+  text-align:center;
+}
+
+footer .footer-logo{
+  font-family:Georgia,serif;
+  color:var(--gold2);
+  font-size:28px;
+}
+
+footer p{
+  color:#888;
+  font-size:12px;
+  margin-top:8px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  nav{
+    display:none;
+  }
+
+  .nav{
+    min-height:65px;
+  }
+
+  .hero{
+    min-height:620px;
+  }
+
+  .hero-content{
+    padding-top:75px;
+  }
+
+  .hero-quote{
+    position:relative;
+    right:auto;
+    bottom:auto;
+    margin-top:55px;
+    text-align:left;
+  }
+
+  .about-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .accomplishment-grid{
+    grid-template-columns:1fr;
+  }
+
+  .sponsor-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+
+  section{
+    padding:60px 18px;
+  }
+
+  .logo{
+    font-size:21px;
+  }
+
+  .nav>.btn{
+    padding:10px 12px;
+    font-size:11px;
+  }
+
+  .hero h1{
+    font-size:53px;
+  }
+
+  .bull-rider{
+    font-size:16px;
+    letter-spacing:7px;
+  }
+
+  .tagline{
+    letter-spacing:2px;
+    font-size:11px;
+  }
+
+  .stats,
+  .sponsor-grid,
+  .impact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .card.gold{
+    transform:none;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .photo{
+    min-height:160px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#home">
+      AH
+      <span>BULL RIDER</span>
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#accomplishments">Accomplishments</a>
+      <a href="#sponsorship">Sponsorship</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#sponsorship" class="btn">Become a Sponsor</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <div class="eyebrow">Grit • Courage • Determination</div>
+
+    <h1>
+      Alix
+      <span>Hernandez</span>
+    </h1>
+
+    <div class="bull-rider">Bull Rider</div>
+
+    <div class="tagline">
+      Grit ★ Courage ★ The Next 8 Seconds
+    </div>
+
+    <div class="company">
+      Spur Ride Rodeo Company
+    </div>
+
+    <div class="hero-buttons">
+      <a href="#sponsorship" class="btn">Become a Sponsor</a>
+      <a href="#about" class="btn btn-blue">Follow the Journey</a>
+    </div>
+
+    <div class="hero-quote">
+      “More Than a Ride.<br>A Future.”
+    </div>
+
+  </div>
+</section>
+
+
+<section class="about" id="about">
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div>
+        <h2 class="section-title">About Alix</h2>
+
+        <div class="section-subtitle">
+          A Young Rider With a Bigger Purpose
+        </div>
+
+        <p>
+          Alix Hernandez is a 17-year-old bull rider from Ault,
+          Colorado, competing under the banner of Spur Ride Rodeo
+          Company.
+        </p>
+
+        <p>
+          In just two years, Alix has already earned multiple Reserve
+          Champion titles — a reflection of his raw talent, relentless
+          dedication, and true western grit.
+        </p>
+
+        <p>
+          Alix is seeking sponsorship support to reach the next level
+          of competition and continue chasing his goals in the rodeo
+          world.
+        </p>
+
+        <div class="signature">
+          “Same Dreams. Bigger Rides.”
+        </div>
+      </div>
+
+
+      <div>
+        <h2 class="section-title" style="font-size:32px;">
+          At a Glance
+        </h2>
+
+        <div class="stats">
+
+          <div class="stat">
+            <strong>17</strong>
+            <span>Age</span>
+          </div>
+
+          <div class="stat">
+            <strong>Ault</strong>
+            <span>Colorado</span>
+          </div>
+
+          <div class="stat">
+            <strong>2 Years</strong>
+            <span>Riding Experience</span>
+          </div>
+
+          <div class="stat">
+            <strong>2025</strong>
+            <span>Active Season</span>
+          </div>
+
+          <div class="stat">
+            <strong>2×</strong>
+            <span>Reserve Champion</span>
+          </div>
+
+          <div class="stat">
+            <strong>Spur Ride</strong>
+            <span>Rodeo Company</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="accomplishments" id="accomplishments">
+  <div class="container">
+
+    <h2 class="section-title">Accomplishments</h2>
+
+    <div class="section-subtitle">
+      Building a reputation one ride at a time
+    </div>
+
+    <div class="accomplishment-grid">
+
+      <div class="accomplishment">
+        <h3>2× Reserve Champion</h3>
+        <p>
+          Multiple Reserve Champion finishes earned during Alix's
+          first years of competitive bull riding.
+        </p>
+      </div>
+
+      <div class="accomplishment">
+        <h3>Competitive Rider</h3>
+        <p>
+          Continuing to compete, develop his skills, and pursue
+          opportunities throughout the rodeo community.
+        </p>
+      </div>
+
+      <div class="accomplishment">
+        <h3>The Journey Continues</h3>
+        <p>
+          Every competition is another opportunity to improve,
+          represent sponsors, and move toward the next level.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="sponsorship" id="sponsorship">
+  <div class="container">
+
+    <h2 class="section-title">Sponsorship Opportunities</h2>
+
+    <div class="section-subtitle">
+      Support Today. Be Part of Tomorrow.
+    </div>
+
+    <p class="sponsor-intro">
+      Partner with Alix Hernandez and become part of his journey.
+      Sponsorship provides businesses with opportunities for social
+      media exposure, brand placement, interviews, and recognition
+      throughout his competitive rodeo career.
+    </p>
+
+
+    <div class="sponsor-grid">
+
+      <div class="card">
+
+        <h3>Bronze Partner</h3>
+
+        <div class="price">
+          $200
+          <small>/ MONTH</small>
+        </div>
+
+        <ul>
+          <li>Business promotion on social media posts</li>
+          <li>Tags and collaborations</li>
+          <li>Business patch on select equipment</li>
+          <li>Social media sponsor recognition</li>
+        </ul>
+
+        <a href="#contact" class="btn">
+          Become a Bronze Partner
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Silver Partner</h3>
+
+        <div class="price">
+          $350
+          <small>/ MONTH</small>
+        </div>
+
+        <ul>
+          <li>Monthly business promotions</li>
+          <li>Links to your website or social media</li>
+          <li>Mentions in select interviews</li>
+          <li>Business patch on select equipment</li>
+          <li>Social media promotion</li>
+        </ul>
+
+        <a href="#contact" class="btn">
+          Become a Silver Partner
+        </a>
+
+      </div>
+
+
+      <div class="card gold">
+
+        <h3>Gold Partner</h3>
+
+        <div class="price">
+          $500
+          <small>/ MONTH</small>
+        </div>
+
+        <ul>
+          <li>Weekly business promotions</li>
+          <li>Links to your website or social media</li>
+          <li>Mentions in interviews</li>
+          <li>Business branding on equipment</li>
+          <li>Direct marketing and social media promotion</li>
+        </ul>
+
+        <a href="#contact" class="btn">
+          Become a Gold Partner
+        </a>
+
+      </div>
+
+
+      <div class="card equipment">
+
+        <h3>Equipment Partnership</h3>
+
+        <div class="price">
+          As Needed
+        </div>
+
+        <ul>
+          <li>Helmet sponsorship</li>
+          <li>Vest sponsorship</li>
+          <li>Chaps sponsorship</li>
+          <li>Gloves sponsorship</li>
+          <li>Ropes sponsorship</li>
+          <li>Boots sponsorship</li>
+          <li>Gear bag sponsorship</li>
+          <li>Rosin and spurs</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-blue">
+          Sponsor Equipment
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="impact">
+
+  <div class="impact-grid">
+
+    <div class="impact-item">
+      <strong>★</strong>
+      <span>Support a Young Athlete</span>
+    </div>
+
+    <div class="impact-item">
+      <strong>↗</strong>
+      <span>Gain Brand Exposure</span>
+    </div>
+
+    <div class="impact-item">
+      <strong>AH</strong>
+      <span>Be Part of His Success</span>
+    </div>
+
+    <div class="impact-item">
+      <strong>★</strong>
+      <span>Make a Lasting Impact</span>
+    </div>
+
+  </div>
+</div>
+
+
+<section class="gallery" id="gallery">
+  <div class="container">
+
+    <h2 class="section-title">Gallery</h2>
+
+    <div class="section-subtitle">
+      The Ride. The Grind. The Journey.
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="photo">Photo Coming Soon</div>
+      <div class="photo">Photo Coming Soon</div>
+      <div class="photo">Photo Coming Soon</div>
+      <div class="photo">Photo Coming Soon</div>
+      <div class="photo">Photo Coming Soon</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="contact-grid">
+
+      <div>
+
+        <h2 class="section-title">
+          Connect With Alix
+        </h2>
+
+        <div class="section-subtitle">
+          Follow the Journey
+        </div>
+
+        <p style="color:#bbb;">
+          Follow Alix's competitive bull-riding journey and stay
+          connected for upcoming events, accomplishments, photos,
+          videos, and sponsorship opportunities.
+        </p>
+
+      </div>
+
+
+      <div class="contact-box">
+
+        <h3>Contact & Social Media</h3>
+
+        <div class="contact-line">
+          <strong>Instagram:</strong>
+          @alixh1.01
+        </div>
+
+        <div class="contact-line">
+          <strong>TikTok:</strong>
+          @official.alix.hernandez
+        </div>
+
+        <div class="contact-line">
+          <strong>Email:</strong>
+          <a href="mailto:alixhernandezbulls@gmail.com">
+            alixhernandezbulls@gmail.com
+          </a>
+        </div>
+
+        <div style="margin-top:25px;">
+          <a href="mailto:alixhernandezbulls@gmail.com"
+             class="btn">
+             Sponsorship Inquiry
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="cta">
+
+  <h2>Invest in the Journey</h2>
+
+  <p>
+    Real support. Real opportunity. A brighter tomorrow.
+  </p>
+
+  <a href="mailto:alixhernandezbulls@gmail.com"
+     class="btn">
+     Become a Sponsor
+  </a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-logo">
+    AH • ALIX HERNANDEZ
+  </div>
+
+  <p>
+    BULL RIDER • BUILT DIFFERENT. RIDE FURTHER.
+  </p>
+
+  <p>
+    Official Alix Hernandez Bull Rider Website
+  </p>
+
+</footer>
+
+</body>
+</html>
